@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %> page</p>
+    <div>
+      <table border="1"><th>First Name</th><th>Last Name</th><th>Year</th>
+      <% for(dat of htmldata) {%>
+          <tr><td><%= dat.first %></td><td><%= dat.last %></td><td><%= dat.year %></td></tr>
+      <%}%>
+      </table>
+    </div>
+  </body>
+</html>
